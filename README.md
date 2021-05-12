@@ -11,4 +11,4 @@
 
 ## Run
 
-`node index.js`
+`yarn start`
