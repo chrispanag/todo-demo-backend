@@ -53,6 +53,11 @@ app.get('/todos', (req, res) => {
  */
 app.post('/todos', (req, res) => {
     const { text } = req.body;
+    if (text === undefined) {
+        res.json({ error: "You didn't define a text!" });
+        return;
+    }
+
     todos.push({
         id: todos.length,
         done: false,
