@@ -68,5 +68,9 @@ app.post('/todos', (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+    res.json({ eestecers: 'What is your profession???'})
+})
+
 app.listen(PORT);
 console.log('Server is listening...');
